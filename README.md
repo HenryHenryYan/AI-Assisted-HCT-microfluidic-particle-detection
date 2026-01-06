@@ -19,6 +19,12 @@ This software is designed to automate particle detection, sizing, and counting u
 1. Install dependencies: `pip install -r requirements.txt`
 2. Run the optimizer: `python hough_optimizer_final.py`
 
+**IMPORTANT:** The images provided in this repository are for demonstration only. 
+To use this code with your own experiments:
+* Place your image files in the same folder.
+* Open `hough_optimizer_final.py` and update the `image_circle_dict1` with your own filenames and manual particle counts.
+
 ## Citation
 If you use this code in your research, please cite our publication:
+
 [Insert your Paper DOI or Citation here once published]
