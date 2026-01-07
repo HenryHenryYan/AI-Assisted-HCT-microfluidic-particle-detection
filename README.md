@@ -22,9 +22,10 @@ This software is designed to automate particle detection, sizing, and counting u
 **IMPORTANT:** The images provided in this repository are for demonstration only. 
 To use this code with your own experiments:
 * Place your image files in the same folder.
-* Open `hough_optimizer_final.py` and update the `image_circle_dict1` with your own filenames and manual particle counts.
+* Open `HCT_optimizer_final.py` and update the `test_images_dict` with your own filenames and manual particle counts.
 
 ## Citation
 If you use this code in your research, please cite our publication:
 
 [Insert your Paper DOI or Citation here once published]
+
