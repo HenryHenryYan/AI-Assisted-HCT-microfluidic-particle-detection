@@ -38,6 +38,30 @@ To use this code with your own experiments:
 ## Citation
 If you use this code in your research, please cite our publication:
 
+## Graphical User Interface (GUI)
+The repository includes a GUI (`hough_GUI_latest.py`) for real-time visualization and manual parameter tuning.
+
+### How to Use the GUI:
+1. **Launch the Program:**
+   Run the following command in your terminal:
+   `python hough_GUI_latest.py`
+
+2. **Select Mode:**
+   Click the **"Run Mode 1"** button on the main menu.
+
+3. **Load an Image:**
+   Click **"STEP 1: Select Tester Image"** and choose one of your experimental images (e.g., `1_min.jpg`).
+
+4. **Tune Parameters:**
+   * Adjust the sliders to change detection sensitivity, radius, and edge detection.
+   * **Red Outline:** Controls parameters for smaller beads.
+   * **Green Outline:** Controls parameters for larger beads.
+   * *Tip:* Click **"STEP 2: Hough Detection Preview"** frequently to visually check if the circles match your particles.
+
+5. **Run Full Analysis:**
+   Once satisfied with the parameters, click **"STEP 3: Confirm Parameters"**. The program will process all images in the folder and generate a graph of the results.
+
+
 
 
 
