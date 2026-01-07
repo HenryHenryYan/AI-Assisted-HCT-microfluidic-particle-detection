@@ -35,6 +35,21 @@ To use this code with your own experiments:
 * Place your image files in the same folder.
 * Open `HCT_optimizer_final.py` and update the `test_images_dict` with your own filenames and manual particle counts.
 
+## Output Data & Results
+The HCT optimization script generates detailed data files (CSV format, compatible with Excel) to help you analyze performance:
+
+* **`all_params.csv`**: A massive dataset containing results for *every* parameter combination tested.
+* **`top_scoring_params.csv`**: A filtered list of the best parameter sets that yielded the highest accuracy.
+
+### Key Columns in the Excel Files:
+* **Hough Parameters:** The specific settings used for that test (DP, MinDist, Canny Edge Threshold, Accumulator Threshold, Min/Max Radius).
+* **Detection Counts:** Raw bead counts for each image (e.g., `Image 1 Beads Found`).
+* **Accuracy Metrics:**
+    * **Average % Correct:** The average detection rate across all test images (Target = 100%).
+    * **Metric 1 (Accuracy):** How close the average detection was to the manual count (Lower is better).
+    * **Metric 2 (Consistency):** The standard deviation between images (Lower is better).
+    * **MetricSum:** The final combined score used to rank the parameters (Metric 1 + Metric 2).
+
 ## Citation
 If you use this code in your research, please cite our publication:
 
@@ -60,6 +75,7 @@ The repository includes a GUI (`hough_GUI_latest.py`) for real-time visualizatio
 
 5. **Run Full Analysis:**
    Once satisfied with the parameters, click **"STEP 3: Confirm Parameters"**. The program will process all images in the folder and generate a graph of the results.
+
 
 
 
