@@ -6,6 +6,8 @@ This repository contains the Python code and algorithms described in the paper:
 
 This software is designed to automate particle detection, sizing, and counting under dynamic microfluidic conditions. It utilizes an optimized Hough Circle Transform (HCT) to identify particles (such as 3 μm and 5 μm polystyrene microbeads) with high accuracy.
 
+Accurate identification and enumeration of microscopic particles are essential for research in microfluidics, electrokinetics, and biosensing. This study introduces an artificial intelligence–assisted Hough Circle Transform (HCT) algorithm designed to automate particle detection, sizing, and counting under dynamic microfluidic conditions. Gold interdigitated electrode arrays (IDEAs) were fabricated on wafer substrates to generate electroosmotic flow, and 3 μm and 5 μm polystyrene microbeads were used as model particles. The first-generation algorithm validated the feasibility of automated detection but exhibited computational inefficiency and sensitivity to algorithmic parameter selection. To overcome these limitations, a second-generation algorithm was developed incorporating parallelized, multi-core parameter optimization and new statistical metrics based on detection accuracy and standard deviation across multiple frames. The optimized system achieved consistent and precise identification of both uniform and mixed particle populations, maintaining high success rates while minimizing false detections. The AI-assisted HCT framework demonstrates strong adaptability to variations in particle size, concentration, and imaging conditions, establishing a robust platform for real-time particle quantification. To facilitate broader adoption and utility, the developed program and its associated graphical user interface (GUI) are made freely available to the research community. Beyond microfluidic automation, the method provides structured, high-quality datasets suitable for neural network training and feedback learning, linking experimental imaging with intelligent algorithm development. This work represents a step toward fully automated, data-driven electrokinetic sorting and microassembly and contributes to the broader vision of physical artificial intelligence in microscale systems. 
+
 ## Contents
 * **hough_optimizer_final.py**: The Generation II algorithm that includes parallelized parameter optimization and statistical metrics.
 * **Sample Images**: Example images (e.g., 1 min.png) to test the detection.
@@ -35,6 +37,7 @@ To use this code with your own experiments:
 
 ## Citation
 If you use this code in your research, please cite our publication:
+
 
 
 
