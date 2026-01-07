@@ -15,9 +15,18 @@ This software is designed to automate particle detection, sizing, and counting u
 * OpenCV (`cv2`)
 * NumPy
 
-## How to Run
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run the optimizer: `python hough_optimizer_final.py`
+## How to Run & Configuration
+1. **Install dependencies:** Open your terminal or command prompt and run:
+   `pip install -r requirements.txt`
+
+2. **Prepare your images:** Place your experimental images (e.g., `.jpg`, `.png`) in the same folder as the script.
+
+3. **Configure the script (CRITICAL STEP):** Open the python file (`HCT_optimizer_final.py`) in a text editor.
+   * Find the section marked **"USER ACTION REQUIRED"** (approx. line 15).
+   * Update the `test_images_dict` with your specific filenames and your manual particle counts (You can use the GUI for an initial fast approximate count).
+   * *Example:* `{"my_experiment_1.jpg": 150, "my_experiment_2.jpg": 200}`
+
+4. **Run the analysis:** `python HCT_optimizer_final.py`
 
 **IMPORTANT:** The images provided in this repository are for demonstration only. 
 To use this code with your own experiments:
@@ -27,5 +36,5 @@ To use this code with your own experiments:
 ## Citation
 If you use this code in your research, please cite our publication:
 
-[Insert your Paper DOI or Citation here once published]
+
 
