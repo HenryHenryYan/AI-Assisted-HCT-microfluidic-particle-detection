@@ -1,4 +1,4 @@
-# AI-Assisted Hough Circle Transform for Microparticle Recognition
+# AI-Assisted Hough Circle Transform (HCT) for Microparticle Recognition
 
 ## Overview
 This repository contains the Python code and algorithms described in the paper: 
@@ -75,6 +75,7 @@ The repository includes a GUI (`hough_GUI_latest.py`) for real-time visualizatio
 
 5. **Run Full Analysis:**
    Once satisfied with the parameters, click **"STEP 3: Confirm Parameters"**. The program will process all images in the folder and generate a graph of the results.
+
 
 
 
