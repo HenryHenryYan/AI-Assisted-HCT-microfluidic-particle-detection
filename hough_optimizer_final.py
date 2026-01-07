@@ -55,15 +55,15 @@ def analysis_1():
                 for m in minRadiusList1:
 
                     for n in maxRadiusList1:
-                        pct = calc_counter1*100/combos_total
-                        print(str(round(pct, 4)),"% of calculations complete.")
+            pct = calc_counter1*100/combos_total
+            print(str(round(pct, 4)),"% of calculations complete.")
 
                         for o in minDistList1:
                             calc_counter1 += 1
                             match_count1 = 0
 
                             for key in image_circle_dict1:
-                                img = cv.imread(cv.samples.findFile(key), cv.IMREAD_COLOR)
+                                img = cv.imread(key, cv.IMREAD_COLOR)
                                 
                                 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
                                 gray = cv.medianBlur(gray, i)
